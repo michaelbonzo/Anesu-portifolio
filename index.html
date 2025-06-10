@@ -481,6 +481,19 @@
 
 
     <!--js files-->
+    <script>
+
+$(document).keydown(function (event) {
+
+if (event.keyCode == 123) { // Prevent F12
+
+return false;
+} else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I
+
+return false;
+}
+});
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
     <script src="style-switcher.js"></script>
